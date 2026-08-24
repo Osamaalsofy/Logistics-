@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - main
-      - master
+      - master # Triggers when you push to main or master
+  workflow_dispatch: # Allows manual trigger from Actions tab
 
 permissions:
   contents: read
@@ -45,7 +46,7 @@ jobs:
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: './dist' # Deploys the compiled folder
 
       - name: Deploy to GitHub Pages
         id: deployment
