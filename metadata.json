@@ -1,0 +1,6 @@
+{
+  "name": "HRC Logistics | هيكل الريادة للخدمات اللوجستية",
+  "description": "Professional logistics and supply chain website for HRC (هيكل الريادة للخدمات اللوجستية) featuring bilingual Arabic/English interface, cargo ship hero, solutions showcase, tech innovation cards, interactive Saudi Arabia storage and hubs tactical map, and verified client reviews.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
