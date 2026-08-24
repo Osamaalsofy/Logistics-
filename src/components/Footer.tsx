@@ -123,7 +123,15 @@ export const Footer: React.FC<FooterProps> = ({
             <div className="space-y-2.5 text-xs text-neutral-300">
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
-                <span>{isRtl ? COMPANY_INFO.addressAr : COMPANY_INFO.addressEn}</span>
+                <a
+                  href={COMPANY_INFO.googleMapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-cyan-300 transition-colors underline decoration-cyan-400/50 underline-offset-4"
+                  title={isRtl ? 'عرض الموقع على خرائط جوجل' : 'Open in Google Maps'}
+                >
+                  {isRtl ? COMPANY_INFO.addressAr : COMPANY_INFO.addressEn}
+                </a>
               </div>
 
               <div className="flex items-center gap-2.5">

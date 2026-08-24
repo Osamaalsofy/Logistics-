@@ -284,12 +284,12 @@ export const GoogleReviewsSection: React.FC<GoogleReviewsSectionProps> = ({ lang
             </button>
 
             <a
-              href="https://maps.google.com/?q=Al+Mahjar,+Jeddah+26411"
+              href={COMPANY_INFO.googleMapsUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-3 rounded-xl bg-neutral-900 text-neutral-300 hover:text-white text-xs font-semibold hover:bg-neutral-800 transition-colors border border-neutral-800 flex items-center gap-1.5"
             >
-              <span>{isRtl ? 'خرائط Google' : 'Google Maps'}</span>
+              <span>{isRtl ? 'افتح الموقع في خرائط Google' : 'Open in Google Maps'}</span>
               <ExternalLink className="w-3.5 h-3.5 text-neutral-400" />
             </a>
           </div>
@@ -337,13 +337,13 @@ export const GoogleReviewsSection: React.FC<GoogleReviewsSectionProps> = ({ lang
           {/* Quick Business Actions */}
           <div className="flex items-center gap-2 text-xs text-neutral-400">
             <a
-              href="https://maps.google.com/?q=Al+Mahjar,+Jeddah+26411"
+              href={COMPANY_INFO.googleMapsUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-neutral-900/80 hover:bg-neutral-800 text-neutral-300 transition-colors border border-neutral-800/80"
             >
               <Navigation className="w-3 h-3 text-cyan-400" />
-              <span>{isRtl ? 'الموقع: المحجر، جدة' : 'Al Mahjar, Jeddah'}</span>
+              <span>{isRtl ? 'الموقع: المحجر، جدة (عرض الخريطة)' : 'Al Mahjar, Jeddah (Map)'}</span>
             </a>
 
             <a

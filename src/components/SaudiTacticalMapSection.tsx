@@ -412,10 +412,16 @@ export const SaudiTacticalMapSection: React.FC<SaudiTacticalMapSectionProps> = (
               </div>
 
               <div className="flex items-center gap-4 text-[11px]">
-                <div className="flex items-center gap-1.5 text-emerald-400 font-bold bg-emerald-950/80 px-3 py-1 rounded-md border border-emerald-500/30">
+                <a
+                  href={COMPANY_INFO.googleMapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 text-emerald-400 hover:text-emerald-300 font-bold bg-emerald-950/80 hover:bg-emerald-900/80 px-3 py-1 rounded-md border border-emerald-500/30 transition-colors"
+                  title={isRtl ? 'افتح الموقع الرئيسي في خرائط Google' : 'Open HQ location in Google Maps'}
+                >
                   <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                  <span>{isRtl ? 'المركز الرئيسي: جدة (المحجر) نشط' : 'ORIGIN: JEDDAH HQ ACTIVE'}</span>
-                </div>
+                  <span>{isRtl ? 'المركز الرئيسي: جدة (المحجر) — افتح الخريطة' : 'ORIGIN: JEDDAH HQ — OPEN MAP'}</span>
+                </a>
                 <span className="hidden sm:inline text-neutral-400 font-mono">21.4858° N, 39.1925° E</span>
               </div>
             </div>
