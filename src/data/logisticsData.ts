@@ -15,6 +15,7 @@ export const COMPANY_INFO = {
   email: 'info@hrc-logistics.sa',
   hoursAr: 'مفتوح · يغلق عند الساعة 9:30 م',
   hoursEn: 'Open · Closes 9:30 PM',
+  googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=21.4858,39.1925',
   rating: 4.3,
   reviewCount: 8,
   crNumber: '4030489211',

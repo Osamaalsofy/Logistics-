@@ -90,11 +90,17 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                   </span>
                 </a>
 
-                {/* Location Pill */}
-                <div className="flex items-center gap-1.5 bg-black/60 backdrop-blur-sm px-4 py-2.5 rounded-xl border border-white/20 text-white shadow-md">
+                {/* Location Pill with Google Maps Link */}
+                <a
+                  href={COMPANY_INFO.googleMapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 bg-black/60 hover:bg-black/80 backdrop-blur-sm px-4 py-2.5 rounded-xl border border-white/20 text-white transition-colors shadow-md hover:border-emerald-400/50"
+                  title={isRtl ? 'عرض الموقع على خرائط جوجل' : 'View location on Google Maps'}
+                >
                   <MapPin className="w-4 h-4 text-emerald-400" />
-                  <span>{isRtl ? 'حي المحجر، جدة' : 'Al Mahjar, Jeddah 26411'}</span>
-                </div>
+                  <span>{isRtl ? 'حي المحجر، جدة (خرائط Google)' : 'Al Mahjar, Jeddah (Google Maps)'}</span>
+                </a>
 
                 {/* Operating Hours Pill */}
                 <div className="flex items-center gap-1.5 bg-emerald-950/70 backdrop-blur-sm px-4 py-2.5 rounded-xl border border-emerald-500/40 text-emerald-300 shadow-md">
