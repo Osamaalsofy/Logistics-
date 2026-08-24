@@ -121,10 +121,16 @@ export const Footer: React.FC<FooterProps> = ({
               {isRtl ? 'المقر والتواصل' : 'Location & Contact'}
             </h4>
             <div className="space-y-2.5 text-xs text-neutral-300">
-              <div className="flex items-start gap-2.5">
-                <MapPin className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
-                <span>{isRtl ? COMPANY_INFO.addressAr : COMPANY_INFO.addressEn}</span>
-              </div>
+              <a
+                href={COMPANY_INFO.googleMapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start gap-2.5 hover:text-cyan-300 transition-colors group"
+                title={isRtl ? 'عرض في خرائط Google' : 'View on Google Maps'}
+              >
+                <MapPin className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
+                <span className="group-hover:underline">{isRtl ? COMPANY_INFO.addressAr : COMPANY_INFO.addressEn}</span>
+              </a>
 
               <div className="flex items-center gap-2.5">
                 <Clock className="w-4 h-4 text-emerald-400 shrink-0" />

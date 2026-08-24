@@ -9,6 +9,7 @@ export const COMPANY_INFO = {
   addressAr: 'حي المحجر، جدة 26411، المملكة العربية السعودية',
   addressEn: 'Al Mahjar, Jeddah 26411, Kingdom of Saudi Arabia',
   plusCode: 'C5RW+GW Al Mahjar, Jeddah',
+  googleMapsUrl: 'https://maps.google.com/?q=C5RW%2BGW+Al+Mahjar,+Jeddah',
   phone: '055 947 6949',
   phoneInternational: '+966 55 947 6949',
   phoneDigits: '966559476949',

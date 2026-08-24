@@ -412,10 +412,17 @@ export const SaudiTacticalMapSection: React.FC<SaudiTacticalMapSectionProps> = (
               </div>
 
               <div className="flex items-center gap-4 text-[11px]">
-                <div className="flex items-center gap-1.5 text-emerald-400 font-bold bg-emerald-950/80 px-3 py-1 rounded-md border border-emerald-500/30">
+                <a
+                  href={COMPANY_INFO.googleMapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 text-emerald-400 hover:text-emerald-300 font-bold bg-emerald-950/80 hover:bg-emerald-900/80 px-3 py-1 rounded-md border border-emerald-500/30 transition-colors group cursor-pointer"
+                  title={isRtl ? 'عرض المقر في خرائط Google' : 'View Hub in Google Maps'}
+                >
                   <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                  <span>{isRtl ? 'المركز الرئيسي: جدة (المحجر) نشط' : 'ORIGIN: JEDDAH HQ ACTIVE'}</span>
-                </div>
+                  <span className="group-hover:underline">{isRtl ? 'المركز الرئيسي: جدة (المحجر) نشط' : 'ORIGIN: JEDDAH HQ ACTIVE'}</span>
+                  <Navigation className="w-3 h-3 text-cyan-400 ml-0.5" />
+                </a>
                 <span className="hidden sm:inline text-neutral-400 font-mono">21.4858° N, 39.1925° E</span>
               </div>
             </div>
@@ -759,6 +766,16 @@ export const SaudiTacticalMapSection: React.FC<SaudiTacticalMapSectionProps> = (
               </div>
 
               <div className="flex items-center gap-2">
+                <a
+                  href={COMPANY_INFO.googleMapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="py-1.5 px-3 rounded-lg bg-neutral-900 hover:bg-neutral-800 text-neutral-300 hover:text-white font-bold text-xs flex items-center gap-1.5 transition-colors border border-neutral-700"
+                  title={isRtl ? 'عرض المقر في خرائط Google' : 'View HQ in Google Maps'}
+                >
+                  <Navigation className="w-3 h-3 text-cyan-400" />
+                  <span>{isRtl ? 'موقع المقر' : 'HQ Map'}</span>
+                </a>
                 <a
                   href={`tel:${COMPANY_INFO.phoneDigits}`}
                   className="py-1.5 px-3.5 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-black font-extrabold text-xs flex items-center gap-1.5 transition-colors shadow-md shadow-cyan-500/20"
