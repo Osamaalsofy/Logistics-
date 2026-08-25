@@ -1,6 +1,7 @@
 import React from 'react';
 import { Language } from '../types';
 import { COMPANY_INFO, ASSETS } from '../data/logisticsData';
+import heroShipBg from '../assets/wmremove-transformed.png';
 import { ArrowRight, ArrowLeft, Star, MapPin, Clock, Shield, CheckCircle2, Phone, Calculator, Ship, Warehouse, Truck } from 'lucide-react';
 
 interface HeroSectionProps {
@@ -22,7 +23,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       {/* Background Image: Aerial Drone Container Ship on Ocean Water */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/wmremove-transformed.png"
+          src={heroShipBg || `${import.meta.env.BASE_URL}images/wmremove-transformed.png`}
           onError={(e) => {
             // Fallback to high-res aerial ocean vessel asset if local file is not present
             (e.target as HTMLImageElement).src = ASSETS.heroShip;

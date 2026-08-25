@@ -25,8 +25,8 @@ export const COMPANY_INFO = {
 // High quality, fast-loading Unsplash CDN images matching the exact aesthetic of the uploaded references
 export const ASSETS = {
   // Aerial Container Ship Hero Background matching user upload (wmremove-transformed.png)
-  heroShip: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=2400&q=90',
-  heroShipAerial: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=2400&q=90',
+  heroShip: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=2400&q=90',
+  heroShipAerial: 'https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=2400&q=90',
   heroShipDirect: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=2400&q=90',
   // Technology container visual matching screenshot 3
   techContainer: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80',
